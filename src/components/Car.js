@@ -1,7 +1,8 @@
-const Car = (props) => {
+// const Car = (props) => {
+const Car = ({children, color}) => {
     // console.log(props.children);
     // console.log(props);
-    const {children, color} = props;
+    // const {children, color} = props;
     
     return (
         <div
