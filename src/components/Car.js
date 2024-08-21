@@ -3,6 +3,8 @@ const Car = ({children, color}) => {
     // console.log(props.children);
     // console.log(props);
     // const {children, color} = props;
+
+    const colorInfo = color ? color : "Néant";
     
     return (
         <div
@@ -16,8 +18,10 @@ const Car = ({children, color}) => {
         >
             {/* <p>Brand : {props.children}</p>
             <p>Color : {props.color}</p> */}
+            {/* <p>Brand : {children}</p>
+            <p>Color : {color}</p> */}
             <p>Brand : {children}</p>
-            <p>Color : {color}</p>
+            <p>Color : {colorInfo}</p>
         </div>
     )
 }

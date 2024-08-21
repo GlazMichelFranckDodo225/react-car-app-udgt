@@ -8,7 +8,8 @@ class MyCar extends Component {
                 <h1>Hello from "MyCar" Class Component</h1>
                 <Car color="Red">Ford</Car>
                 <Car color="Black">Mercedes</Car>
-                <Car color="Green">Peugeot</Car>
+                {/* <Car color="Green">Peugeot</Car> */}
+                <Car >Peugeot</Car>
             </div>
         )
     }
