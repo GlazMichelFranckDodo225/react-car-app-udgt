@@ -5,6 +5,12 @@ const Car = ({children, color}) => {
     // const {children, color} = props;
 
     // const colorInfo = color ? color : "Néant";
+    let colorInfo = "";
+    if (color) {
+        colorInfo = color;           
+    } else {
+        colorInfo = "Néant";
+    }
     
     return (
         <div
@@ -21,7 +27,7 @@ const Car = ({children, color}) => {
             {/* <p>Brand : {children}</p>
             <p>Color : {color}</p> */}
             <p>Brand : {children}</p>
-            <p>Color : {color ? color : "Néant"}</p>
+            <p>Color : {colorInfo}</p>
         </div>
     )
 }
